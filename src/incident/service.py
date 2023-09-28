@@ -19,6 +19,7 @@ async def add_problem_to_db(
     :param session: Sqlalchemy session.
     :returns: A dict with hash value from Problem model.
     """
+    print(header)
     stmt = (
         sa.insert(Problem)
         .values(hash_value=problem_hash, header=header, body=body)

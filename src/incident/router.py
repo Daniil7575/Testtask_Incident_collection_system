@@ -34,7 +34,6 @@ async def add_problem(
     # A body param is needed for sending request with body from swagger UI.
     # In other case, below construction will be used (but it has no data validation).
     # body = orjson.loads(await request.body())
-
     body = {key: body[key] for key in sorted(body)}
     hash_value = hashlib.md5(orjson.dumps({"header": header, "body": body})).hexdigest()
 
