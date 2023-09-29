@@ -75,3 +75,4 @@ body
    sudo docker compose build
    sudo docker compose up
    ```
+5. Go to the `http://127.0.0.1:8000/docs` or `http://0.0.0.0:8000/docs`
