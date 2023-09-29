@@ -5,6 +5,9 @@ services:
   db:
     image: postgres:15
     container_name: incident_db
+    buid:
+      dockerfile: Dockerfile.PostgreSQL
+
     ports:
       - 5433:5432
     environment:
