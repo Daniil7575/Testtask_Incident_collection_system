@@ -5,7 +5,7 @@ services:
   db:
     image: postgres:15
     container_name: incident_db
-    buid:
+    build:
       dockerfile: Dockerfile.PostgreSQL
 
     ports:
